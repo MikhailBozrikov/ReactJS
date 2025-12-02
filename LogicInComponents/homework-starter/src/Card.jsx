@@ -1,10 +1,12 @@
 import './Card.css';
+import { useAutoFocus } from './useAutoFocus';
 
 export const Card = ({
   id,
   title,
-  onTitleChange,
   done,
+  isNew,
+  onTitleChange,
   onToggle,
   onDelete,
 }) => {
@@ -27,6 +29,9 @@ export const Card = ({
     }
   };
 
+  // Используем хук автофокуса
+  const titleInputRef = useAutoFocus(isNew);
+
   return (
     <form className="card" onSubmit={handleSubmit}>
       <input
@@ -38,6 +43,7 @@ export const Card = ({
       />
 
       <input
+        ref={titleInputRef}
         className="card__title"
         type="text"
         value={title}

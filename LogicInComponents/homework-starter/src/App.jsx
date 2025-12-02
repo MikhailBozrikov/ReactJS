@@ -3,7 +3,15 @@ import { useList } from './useList';
 import './App.css';
 
 export const App = () => {
-  const { list, createItem, setItemTitle, toggleItem, deleteItem } = useList();
+  const { 
+    list, 
+    createItem, 
+    setItemTitle, 
+    toggleItem, 
+    deleteItem,
+    getNewlyCreatedId,
+    resetNewlyCreatedId,
+  } = useList();
 
   return (
     <div className="app">
@@ -14,6 +22,8 @@ export const App = () => {
         onItemTitleChange={setItemTitle}
         onItemToggle={toggleItem}
         onItemDelete={deleteItem}
+        getNewlyCreatedId={getNewlyCreatedId}
+        resetNewlyCreatedId={resetNewlyCreatedId}
       />
 
       <button className="create-button" onClick={createItem}>
