@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { LoginForm } from "../LoginForm";
 import { RegisterForm } from "../RegisterForm";
-
 import "./AuthForm.css";
 
-export const AuthForm = () => {
+interface AuthFormProps {
+  onSuccess?: () => void;
+}
+
+export const AuthForm = ({ onSuccess }: AuthFormProps) => {
   const [authType, setAuthType] = useState<string>("register");
 
   const handleClick = () => {
@@ -18,12 +21,22 @@ export const AuthForm = () => {
       <p className="auth-form__title">
         {authType === "register" ? "Регистрация" : "Авторизация"}
       </p>
-      {authType === "register" ? <RegisterForm /> : <LoginForm />}
+      
+      {authType === "register" ? (
+        <RegisterForm onSuccess={onSuccess} />
+      ) : (
+        <LoginForm onSuccess={onSuccess} />
+      )}
+      
       <div className="auth-form__info">
         <span>
           {authType === "register" ? "Уже есть аккаунт?" : "Ещё нет аккаунта?"}
         </span>
-        <button className="auth-form__button" onClick={handleClick}>
+        <button 
+          className="auth-form__button" 
+          onClick={handleClick}
+          type="button"
+        >
           {authType === "register" ? "Войти" : "Создать аккаунт"}
         </button>
       </div>
