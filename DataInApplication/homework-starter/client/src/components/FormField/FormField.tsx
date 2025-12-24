@@ -2,9 +2,9 @@ import { FC, ReactNode } from "react";
 import "./FormField.css";
 
 interface IFormFieldProps {
-  label: string;
-  children: ReactNode;
-  errorMessage?: string;
+  label: string; // Название поля
+  children: ReactNode; // Поле ввода (input, textarea, select)
+  errorMessage?: string; // отображение текста ошибки
 }
 
 export const FormField: FC<IFormFieldProps> = ({
