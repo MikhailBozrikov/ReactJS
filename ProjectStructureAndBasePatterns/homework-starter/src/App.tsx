@@ -1,29 +1,25 @@
-import StarIcon from './assets/star.svg?react'
-import LogoIcon from './assets/stair.svg?react'
-import './styles.css'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import './App.css'
+import { BaseLayout } from './components/ui/BaseLayout/BaseLayout'
+import { RestaurantRatingPage } from './components/pages/RestaurantRatingPage/RestaurantRatingPage'
+import { UserContext } from './contexts/UserContext'
+
+const queryClient = new QueryClient()
+
+const user = {
+  name: 'John Doe',
+  avatar: '/avatar.png'
+}
 
 function App() {
   return (
-    <>
-      <header>
-        <div className="logo">
-          <LogoIcon width={16} height={16} className="logo__icon" />
-          <span>Eats</span>
-        </div>
-        <div className="profile">
-          <img alt="profile" src="/avatar.png" />
-        </div>
-      </header>
-      <main>
-        <input placeholder="Search for restaurants" />
-        <section></section>
-      </main>
-      <footer>
-        <p>Privacy Policy</p>
-        <p className="corporation">2022 Eats</p>
-        <p>Terms Of Service</p>
-      </footer>
-    </>
+    <QueryClientProvider client={queryClient}>
+      <UserContext.Provider value={user}>
+        <BaseLayout>
+          <RestaurantRatingPage />
+        </BaseLayout>
+      </UserContext.Provider>
+    </QueryClientProvider>
   )
 }
 
