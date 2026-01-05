@@ -1,0 +1,28 @@
+.footer {
+  padding: 24px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  color: #333;
+}
+
+.copyright {
+  color: #999;
+  font-size: 14px;
+}

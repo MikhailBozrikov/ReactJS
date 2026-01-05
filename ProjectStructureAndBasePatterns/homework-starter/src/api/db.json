@@ -1,0 +1,36 @@
+{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Mama's Kitchen",
+      "cuisine": "American, 4.7 stars",
+      "rating": 5,
+      "image": "/mamas-kitchen.png",
+      "reviewsCount": 128
+    },
+    {
+      "id": "2",
+      "name": "The Burger Joint",
+      "cuisine": "American, 4.6 stars",
+      "rating": 3,
+      "image": "/burger-joint.png",
+      "reviewsCount": 95
+    },
+    {
+      "id": "3",
+      "name": "Pasta Express",
+      "cuisine": "Italian, 4.5 stars",
+      "rating": 5,
+      "image": "/pasta-express.png",
+      "reviewsCount": 203
+    },
+    {
+      "id": "4",
+      "name": "Taco Fiesta",
+      "cuisine": "Mexican, 4.8 stars",
+      "rating": 4.8,
+      "image": "/taco-fiesta.png",
+      "reviewsCount": 156
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+.restaurant-rating-page {
+  padding: 20px;
+}
+
+.page-title {
+  margin: 0 0 24px 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error-container {
+  color: #d32f2f;
+}
