@@ -8,6 +8,13 @@
 	gap: 10px;
 }
 
+.users input {
+	padding: 5px;
+	background-color: #333;
+	color: antiquewhite;
+	border: 1px solid whitesmoke;
+}
+
 .users a {
 	color: cornflowerblue;
 	cursor: pointer;
