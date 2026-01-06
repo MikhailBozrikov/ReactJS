@@ -1,0 +1,35 @@
+.playlistsPage {
+	color: bisque;
+}
+
+.playlists {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.playlists label {
+	display: flex;
+	gap: 5px;
+	margin-bottom: 15px;
+}
+
+.playlists input {
+	padding: 5px;
+	background-color: #333;
+	color: antiquewhite;
+	border: 1px solid whitesmoke;
+}
+
+.playlist-item {
+	margin: 5px 0;
+}
+
+.playlist-item a {
+	color: cornflowerblue;
+	cursor: pointer;
+}
+
+.playlist-item a:hover {
+	color: rgb(72, 111, 184);
+}

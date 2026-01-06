@@ -1,0 +1,31 @@
+.playlistInfoPage {
+	color: darkcyan;
+}
+
+.playlist {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.genre-link {
+	color: cornflowerblue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.genre-link:hover {
+	color: rgb(72, 111, 184);
+}
+
+.songs-list {
+	margin: 0;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.songs-list li {
+	padding: 2px 0;
+}
