@@ -1,0 +1,35 @@
+.usersPage {
+	color: bisque;
+}
+
+.users {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.users input {
+	padding: 5px;
+	background-color: #333;
+	color: antiquewhite;
+	border: 1px solid whitesmoke;
+}
+
+.users a {
+	color: cornflowerblue;
+	cursor: pointer;
+}
+
+.users a:hover {
+	color: rgb(72, 111, 184);
+}
+
+.users button {
+	text-align: left;
+	color: cornflowerblue;
+}
+
+.users button:hover {
+	text-align: left;
+	color: rgb(72, 111, 184);
+}
